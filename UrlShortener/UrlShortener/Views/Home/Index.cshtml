@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<link href="~/Content/home.css" rel="stylesheet" />
+<script src="~/Scripts/home.js"></script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<div class="main-div">
+    <h1>URL Shortener</h1>
+    <div class="container">
+        <div class="horizontal-block">
+            <div class="link-block">
+                <div class="w-form">
+                    <div id="link-form" name="link-form" class="link-creation">
+                        <input type="text" class="link-creation-input" maxlength="256" name="url" placeholder="Enter link here" id="url" autocomplete="off" autocorrect="off" autocapitalize="none">
+                        <input type="submit" class="btn-primary-3" value="Shorten URL" onclick="submitURL()">
+                    </div>
+                    <div class="shortened-link">
+                        <div class="shortened-link-item shortened-link-item-copy">
+                            <div class="origin-link">google.com</div>
+                            <div class="short-link">
+                                <a href="https://rb.gy/i8kxzd" title="https://rb.gy/i8kxzd" target="_blank">rb.gy/i8kxzd</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
